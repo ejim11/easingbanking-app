@@ -1,0 +1,94 @@
+@import "../../SCSS/base";
+@import "../../SCSS/animation";
+
+.Thirdsct {
+  padding: 8rem 12rem;
+  background-color: $color-secondary-3;
+
+  @media only screen and (max-width: $bp-smallest) {
+    padding: 3rem 8rem;
+  }
+
+  & h2 {
+    font-size: 3rem;
+    color: $color-primary-1;
+    font-weight: 300;
+
+    @media only screen and (max-width: $bp-smallest) {
+      text-align: center;
+    }
+  }
+}
+
+.articleItem {
+  background-color: $color-white;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  margin-bottom: 3rem;
+
+  &-img {
+    height: 15rem;
+    overflow: hidden;
+  }
+
+  & h3 {
+    margin: 1rem 0;
+
+    & a {
+      text-decoration: none;
+      font-size: 2.1rem;
+      color: $color-primary-1;
+      font-weight: 300;
+
+      &:hover {
+        color: $color-primary-2;
+      }
+    }
+  }
+
+  &-person {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    color: $color-secondary-1;
+  }
+
+  &-info {
+    padding: 1rem;
+    @media only screen and (max-width: $bp-smallest) {
+      padding: 1rem 2rem;
+    }
+  }
+
+  &-text {
+    color: $color-secondary-1;
+    font-size: 1.5rem;
+    font-weight: 300;
+
+    @media only screen and (max-width: $bp-smallest) {
+      margin: 1rem 0;
+    }
+  }
+}
+
+.articleBox {
+  margin: 4rem 0;
+}
+
+.invisible {
+  opacity: 0;
+}
+
+.visible {
+  opacity: 1;
+}
+
+.anim {
+  animation-name: titleAnimation;
+  animation-timing-function: ease-in-out;
+  animation-duration: 6s;
+  animation-fill-mode: forwards;
+}
+
+.anim1 {
+  animation: showParagraph 6s ease-in;
+}

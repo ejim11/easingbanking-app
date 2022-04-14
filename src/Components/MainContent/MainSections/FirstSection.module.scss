@@ -1,0 +1,103 @@
+@import "../../SCSS/base";
+@import "../../SCSS/animation";
+
+.firstSection {
+  display: flex;
+  height: 40rem;
+  background-color: $color-secondary-3;
+  padding-left: 12rem;
+
+  @media only screen and (max-width: $bp-smallest) {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  @media only screen and (max-width: $bp-smallest) {
+    height: auto;
+  }
+
+  &__left {
+    flex: 0 0 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-right: 2.5rem;
+
+    @media only screen and (max-width: $bp-smallest) {
+      order: 2;
+      align-items: center;
+      padding-right: 0;
+      padding: 2rem 3rem;
+    }
+
+    & h1 {
+      font-size: 4.5rem;
+      color: $color-primary-1;
+      animation-name: titleAnimation;
+      animation-timing-function: ease-in-out;
+      animation-duration: 6s;
+      animation-fill-mode: forwards;
+      font-weight: 300;
+
+      @media only screen and (max-width: $bp-largest) {
+        font-size: 4rem;
+      }
+      @media only screen and (max-width: $bp-medium) {
+        font-size: 3.8rem;
+      }
+      @media only screen and (max-width: $bp-smallest) {
+        margin: 1rem 0;
+        text-align: center;
+      }
+    }
+
+    & p {
+      margin: 2rem 0;
+      color: $color-secondary-1;
+      font-size: 1.8rem;
+      font-weight: 300;
+
+      animation: showParagraph 6s ease-in;
+      -webkit-animation: showParagraph 6s ease-in;
+
+      @media only screen and (max-width: $bp-smallest) {
+        text-align: center;
+      }
+    }
+  }
+
+  &__right {
+    flex: 0 0 60%;
+    position: relative;
+    background-image: url("../../../Assets/bg-intro-desktop.svg");
+    background-position: 0% 65%;
+    background-size: 130%;
+    background-repeat: no-repeat;
+
+    @media only screen and (max-width: $bp-smallest) {
+      order: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: -14rem;
+    }
+  }
+
+  & img {
+    position: absolute;
+    top: -14rem;
+    right: -8rem;
+    width: 55rem;
+    z-index: 8;
+    // animation: showParagraph 6s ease-in;
+    // -webkit-animation: showParagraph 6s ease-in;
+
+    @media only screen and (max-width: $bp-smallest) {
+      position: relative;
+      display: block;
+      right: 0;
+      top: 0;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+@import "../SCSS/base";
+
+.btn {
+  padding: 1.2rem 2.5rem;
+  border: none;
+  outline: none;
+  background-image: linear-gradient(
+    to right,
+    rgba($color-primary-2, 0.6),
+    rgba($color-primary-3, 0.6)
+  );
+  color: $color-white;
+  font-weight: 400;
+  border-radius: 5rem;
+  cursor: pointer;
+
+  @media only screen and (max-width: $bp-small) {
+    padding: 0.8rem 1.5rem;
+  }
+
+  &:hover {
+    transform: translateY(-0.2rem);
+    box-shadow: 0 0.5rem 0.5rem rgba(#222, 0.1);
+  }
+  &:active {
+    transform: translateY(0.1rem);
+    box-shadow: 0 0.4rem 0.4rem rgba(#222, 0.1);
+  }
+}

@@ -1,0 +1,24 @@
+$color-primary-1: hsl(233, 26%, 24%);
+$color-primary-2: hsl(136, 65%, 51%);
+$color-primary-3: hsl(192, 70%, 51%);
+
+$color-secondary-1: hsl(233, 8%, 62%);
+$color-secondary-2: hsl(220, 16%, 96%);
+$color-secondary-3: hsl(0, 0%, 98%);
+
+$color-white: hsl(0, 0%, 100%);
+
+$font-primary: Public Sans;
+
+// media query breakpoints
+$bp-huger3: 131.25; //2100px
+$bp-huger2: 112.5em; //1800px
+$bp-huger: 100em; //1600px
+$bp-huge: 90.625em; //1450px
+$bp-largest: 80em; //1280px
+$bp-large: 68.75em; //1100px
+$bp-medium: 59.375em; //950px
+$bp-small: 44.6875em; //715px
+$bp-smaller: 40.625em; //650px
+$bp-smallest: 37.5em; //600px
+$bp-min: 31.25%; //500px

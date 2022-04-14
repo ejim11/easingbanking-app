@@ -1,0 +1,80 @@
+@import "../../SCSS/base";
+@import "../../SCSS/animation";
+
+.secondsct {
+  padding: 8rem 12rem;
+  background-color: $color-secondary-2;
+  transition: all 1.5s;
+
+  @media only screen and (max-width: $bp-smallest) {
+    padding: 3rem 3rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  & h2 {
+    font-size: 3rem;
+    color: $color-primary-1;
+    font-weight: 300;
+  }
+
+  p {
+    font-size: 1.8rem;
+    margin: 2rem 0;
+    width: 65%;
+    color: $color-secondary-1;
+    font-weight: 300;
+
+    @media only screen and (max-width: $bp-smallest) {
+      text-align: center;
+    }
+  }
+}
+
+.feature-box {
+  margin: 4rem 0;
+}
+
+.featureItem {
+  margin-bottom: 2rem;
+
+  @media only screen and (max-width: $bp-smallest) {
+    margin-bottom: 0;
+    margin: 2rem 3rem;
+  }
+
+  & h3 {
+    font-size: 2rem;
+    font-weight: 300;
+    margin-top: 2rem;
+    color: $color-primary-1;
+    animation-name: titleAnimation;
+    animation-timing-function: ease-in-out;
+    animation-duration: 6s;
+    animation-fill-mode: forwards;
+  }
+  & p {
+    width: 100%;
+  }
+}
+
+.invisible {
+  opacity: 0;
+}
+
+.visible {
+  opacity: 1;
+}
+
+.anim {
+  animation-name: titleAnimation;
+  animation-timing-function: ease-in-out;
+  animation-duration: 6s;
+  animation-fill-mode: forwards;
+}
+
+.anim1 {
+  animation: showParagraph 6s ease-in;
+}

@@ -1,0 +1,82 @@
+@import "../SCSS/base";
+@import "../SCSS/animation.scss";
+
+.footer {
+  grid-column: full-start/full-end;
+  background-color: $color-primary-1;
+  padding: 4rem 12rem;
+  display: flex;
+
+  @media only screen and (max-width: $bp-large) {
+    padding: 4rem 6rem;
+  }
+
+  @media only screen and (max-width: $bp-smallest) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__first-div {
+    flex: 0 0 30%;
+
+    @media only screen and (max-width: $bp-smallest) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      -webkit-align-items: center;
+    }
+  }
+  &__second-div {
+    flex: 0 0 30%;
+
+    & nav ul {
+      list-style-type: none;
+
+      column-count: 2;
+
+      @media only screen and (max-width: $bp-smallest) {
+        column-count: 1;
+      }
+
+      & li {
+        margin-bottom: 1rem;
+
+        @media only screen and (max-width: $bp-smallest) {
+          text-align: center;
+        }
+
+        & a {
+          text-decoration: none;
+          color: $color-white;
+          font-size: 1.6rem;
+
+          &:hover {
+            color: $color-primary-2;
+          }
+        }
+      }
+    }
+  }
+  &__third-div {
+    flex: 0 0 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    -webkit-align-items: flex-end;
+
+    @media only screen and (max-width: $bp-smallest) {
+      align-items: center;
+      margin: 1.5rem 0;
+    }
+
+    & p {
+      margin-top: 3rem;
+      color: $color-secondary-1;
+      font-size: 1.5rem;
+    }
+  }
+
+  &__logo-box {
+    margin-bottom: 3rem;
+  }
+}

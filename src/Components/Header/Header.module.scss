@@ -1,0 +1,143 @@
+@import "../SCSS/base";
+@import "../SCSS/animation";
+
+.head {
+  display: flex;
+  position: relative;
+  grid-column: full-start/full-end;
+  z-index: 50;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  background-color: $color-white;
+  width: 100%;
+  z-index: 50;
+
+  &__logo-box {
+    margin-left: 12rem;
+    animation: showParagraph 6s ease-in;
+
+    @media only screen and (max-width: $bp-medium) {
+      margin-left: 4rem;
+    }
+  }
+
+  & button {
+    @media only screen and (max-width: $bp-medium) {
+      margin-left: auto;
+      margin-right: 4rem;
+    }
+    @media only screen and (max-width: $bp-smallest) {
+      display: none;
+    }
+  }
+  &-nav {
+    align-self: stretch;
+    display: flex;
+    justify-content: center;
+  }
+
+  & nav {
+    flex: 0 0 60%;
+
+    @media only screen and (max-width: $bp-medium) {
+      flex: 0 0 50%;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+      position: absolute;
+      top: 6rem;
+      height: 100vh;
+      width: 100%;
+      background: linear-gradient(to bottom, #222, rgba($color-white, 0.75));
+      z-index: 30;
+      animation: showParagraph 1.5s ease-in;
+      -webkit-animation: showParagraph 1.5s ease-in;
+    }
+
+    .navigation {
+      list-style-type: none;
+      display: flex;
+      align-self: stretch;
+      align-items: center;
+      @media only screen and(max-width: $bp-smallest) {
+        flex-direction: column;
+        width: 40rem;
+        height: auto;
+        background-color: $color-white;
+        z-index: 40;
+        margin-top: 4rem;
+        align-self: flex-start;
+        -webkit-align-self: flex-start;
+      }
+
+      & li {
+        margin: 0 1rem;
+        align-self: stretch;
+        display: flex;
+        align-items: center;
+
+        @media only screen and(max-width: $bp-smallest) {
+          margin: 0;
+        }
+
+        &:hover {
+          padding-bottom: 0.3rem;
+
+          background-image: linear-gradient(
+            to right,
+            $color-primary-2,
+            $color-primary-3
+          );
+        }
+
+        & a {
+          text-decoration: none;
+          color: $color-secondary-1;
+          font-size: 1.6rem;
+          align-self: stretch;
+          display: flex;
+          align-items: center;
+          background-color: $color-white;
+          margin-right: 0;
+
+          @media only screen and (max-width: $bp-smallest) {
+            padding: 1rem 1rem;
+            width: 100%;
+            justify-content: center;
+          }
+        }
+      }
+    }
+  }
+}
+
+.sticky {
+  position: fixed;
+  height: 6rem;
+  opacity: 0.98;
+}
+
+.iconToggle {
+  height: 3.5rem;
+  width: 3.5rem;
+  fill: #222;
+  display: none;
+
+  @media only screen and (max-width: $bp-smallest) {
+    display: block;
+    margin-right: 2rem;
+    margin-left: auto;
+  }
+}
+
+.navHide {
+  align-self: stretch;
+  display: flex;
+  justify-content: center;
+  @media only screen and (max-width: $bp-smallest) {
+    display: none;
+  }
+}

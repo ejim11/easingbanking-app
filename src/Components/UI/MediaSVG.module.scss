@@ -1,0 +1,17 @@
+@import "../SCSS/base";
+
+a {
+  text-decoration: none;
+  color: $color-white;
+  margin-right: 1rem;
+
+  &:hover {
+    color: $color-primary-2;
+  }
+
+  & .icon {
+    width: 2rem;
+    height: 2rem;
+    fill: currentColor;
+  }
+}

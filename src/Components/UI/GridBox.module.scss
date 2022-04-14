@@ -1,0 +1,12 @@
+@import "../SCSS/base";
+
+.gridbox {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-column-gap: 2rem;
+  grid-template-rows: min-content;
+
+  @media only screen and (max-width: $bp-smallest) {
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+  }
+}
