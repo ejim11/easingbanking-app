@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/easybanking-app/static/css/main.5304da2a.css",
+    "main.css": "/easybanking-app/static/css/main.0ac12282.css",
     "main.js": "/easybanking-app/static/js/main.52ed2ba9.js",
     "static/media/image-currency.jpg": "/easybanking-app/static/media/image-currency.1b385bf9f62bf25ef22d.jpg",
     "static/media/image-restaurant.jpg": "/easybanking-app/static/media/image-restaurant.1951b57675babfd83c6c.jpg",
@@ -16,11 +16,11 @@
     "static/media/bg-intro-desktop.svg": "/easybanking-app/static/media/bg-intro-desktop.8be308fd4ce79bd32a09.svg",
     "static/media/icon-online.svg": "/easybanking-app/static/media/icon-online.b0622b15741418e9efe3805d1b2ac26b.svg",
     "index.html": "/easybanking-app/index.html",
-    "main.5304da2a.css.map": "/easybanking-app/static/css/main.5304da2a.css.map",
+    "main.0ac12282.css.map": "/easybanking-app/static/css/main.0ac12282.css.map",
     "main.52ed2ba9.js.map": "/easybanking-app/static/js/main.52ed2ba9.js.map"
   },
   "entrypoints": [
-    "static/css/main.5304da2a.css",
+    "static/css/main.0ac12282.css",
     "static/js/main.52ed2ba9.js"
   ]
 }
