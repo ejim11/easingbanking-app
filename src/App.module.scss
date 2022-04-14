@@ -30,12 +30,6 @@ html {
   @media only screen and (max-width: $bp-large) {
     font-size: 50%; //1rem = 8px
   }
-  @media only screen and (max-width: $bp-small) {
-    font-size: 43.75%; //1rem = 7px
-  }
-  // @media only screen and (max-width: $bp-smaller) {
-  //   font-size: 40%; //1rem = 6px
-  // }
 }
 
 body {

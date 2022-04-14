@@ -23,11 +23,12 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      -webkit-align-items: center;
+      justify-content: space-between;
     }
   }
   &__second-div {
     flex: 0 0 30%;
+    margin-top: 2rem;
 
     & nav ul {
       list-style-type: none;
@@ -39,7 +40,7 @@
       }
 
       & li {
-        margin-bottom: 1rem;
+        margin-bottom: 1.5rem;
 
         @media only screen and (max-width: $bp-smallest) {
           text-align: center;
@@ -62,11 +63,11 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    -webkit-align-items: flex-end;
 
     @media only screen and (max-width: $bp-smallest) {
       align-items: center;
       margin: 1.5rem 0;
+      padding-bottom: 2rem;
     }
 
     & p {

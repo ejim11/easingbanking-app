@@ -28,7 +28,7 @@
       order: 2;
       align-items: center;
       padding-right: 0;
-      padding: 2rem 3rem;
+      padding: 3rem 3rem 8rem 3rem;
     }
 
     & h1 {
@@ -63,6 +63,7 @@
 
       @media only screen and (max-width: $bp-smallest) {
         text-align: center;
+        line-height: 3rem;
       }
     }
   }
